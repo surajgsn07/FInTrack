@@ -6,11 +6,13 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+
 app.use(cors({
-    origin : "https://fin-track-gsn.netlify.app",
-    methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
-    credentials:true
-}))
+    origin: "https://fin-track-gsn.netlify.app",  // ✅ Correct Frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'], // ✅ Add allowed headers
+    credentials: true  // ✅ Required for cookies/session-based auth
+}));
 const PORT =  process.env.PORT || 8000 
 connectDB();
 
