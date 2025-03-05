@@ -31,11 +31,11 @@ const Sidebar = () => {
       <div
         className={`fixed lg:static bg-white dark:bg-black text-black dark:text-white 
         lg:w-64 w-64 min-h-screen shadow-xl transition-transform duration-300 ease-in-out 
-        ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+        ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 z-50`}
         style={{ padding: "20px" }} // Inline padding fix
       >
         
-        <ul className="space-y-3 z-50">
+        <ul className="space-y-3 ">
   {menuItems.map((item, index) => (
     <li key={index} style={{ marginBottom: "12px" }}>
       <Link
