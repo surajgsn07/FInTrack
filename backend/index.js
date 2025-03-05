@@ -11,7 +11,7 @@ app.use(cors({
     methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
     credentials:true
 }))
-const PORT = 8000
+const PORT =  process.env.PORT || 8000 
 connectDB();
 
 import transactionRouter from "./routes/transaction.routes.js"
