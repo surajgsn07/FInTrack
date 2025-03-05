@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin : "*",
+    origin : "https://fin-track-gsn.netlify.app",
     methods:['GET' , 'POST' , 'PUT' , 'DELETE'],
     credentials:true
 }))
