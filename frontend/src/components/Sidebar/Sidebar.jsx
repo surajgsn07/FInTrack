@@ -35,7 +35,7 @@ const Sidebar = () => {
         style={{ padding: "20px" }} // Inline padding fix
       >
         
-        <ul className="space-y-3 z-30">
+        <ul className="space-y-3 z-50">
   {menuItems.map((item, index) => (
     <li key={index} style={{ marginBottom: "12px" }}>
       <Link
