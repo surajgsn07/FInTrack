@@ -3,9 +3,8 @@ import axiosRetry from 'axios-retry';
 import Cookie from "universal-cookie";
 import { getCookie } from './cookieFunc';
 
-const axiosInstance = axios.create({
-  // baseURL: 'https://letsconnect-6jnn.onrender.com', 
-  baseURL:"http://localhost:8000",
+const axiosInstance = axios.create({ 
+  baseURL:"https://fintrack-nu8a.onrender.com",
   withCredentials: true, 
 });
 
